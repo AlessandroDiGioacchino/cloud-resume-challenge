@@ -1,0 +1,146 @@
+
+@import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
+
+body {
+  color: var(--ctp-mocha-text);
+  background: var(--ctp-mocha-base);
+}
+
+a {
+  color: var(--ctp-mocha-blue);
+}
+
+hr {
+  border-color: var(--ctp-mocha-overlay0);
+  border-style: dashed;
+  margin-right: 16px;
+}
+
+ul {
+  margin-top: 2px;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.tagline {
+  color: var(--ctp-mocha-subtext0);
+  margin-top: -20px;
+}
+
+.personalinfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -16px;
+  margin-right: 128px;
+  font-size: small;
+}
+
+.cvsection {
+  border-style: solid;
+  border-bottom: thick line;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  margin-bottom: 8px;
+
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--ctp-mocha-subtext0);
+}
+
+.cvevent {
+  margin-bottom: 1.25rem;
+}
+
+.cvtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cvorganization {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ctp-mocha-subtext0);
+}
+
+.cvsubheader {
+  display: grid;
+  grid-template-columns: 1fr 7rem;
+  margin-right: 128px;
+}
+
+.cvdate,
+.cvlocation {
+  font-size: 0.875rem;
+  font-weight: 100;
+  margin-bottom: 8px;
+  color: var(--ctp-mocha-subtext1);
+}
+
+.cvachievement {
+  display: grid;
+  grid-template-columns: 8% 1fr;
+  grid-template-rows: auto auto;
+  margin-top: 4px;
+}
+
+.cvachievementicon {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.cvachievementtitle {
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: bold;
+}
+
+.cvachievementdescription {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cvskill{
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0;
+}
+
+.cvproficiency {
+  margin-left: auto;
+  display: flex;
+  gap: 0.35rem;
+}
+
+.cvproficiency i {
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--ctp-mocha-surface1);
+}
+
+.cvproficiency i.filled {
+  background: var(--ctp-mocha-blue);
+}
+
+.cvproficiency i.half {
+  background: linear-gradient(
+    to right,
+    var(--ctp-mocha-blue) 0 50%,
+    var(--ctp-mocha-surface1) 50% 100%
+  );
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 56% 44%;
+}
+
+.column {
+  margin-right: 32px;
+}

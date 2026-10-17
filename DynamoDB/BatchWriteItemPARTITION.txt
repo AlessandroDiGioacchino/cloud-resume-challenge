@@ -1,0 +1,114 @@
+
+aws dynamodb batch-write-item `
+--request-items '{
+  "ImageLeaderboardTable": [
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/001.jpg" },
+            "ViewCount": { "N": "27" },
+            "GSIHash": { "S": "PARTITION_1" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/002.jpg" },
+            "ViewCount": { "N": "23" },
+            "GSIHash": { "S": "PARTITION_0" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/003.jpg" },
+            "ViewCount": { "N": "16" },
+            "GSIHash": { "S": "PARTITION_0" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/004.jpg" },
+            "ViewCount": { "N": "83" },
+            "GSIHash": { "S": "PARTITION_2" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/005.jpg" },
+            "ViewCount": { "N": "52" },
+            "GSIHash": { "S": "PARTITION_0" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/006.jpg" },
+            "ViewCount": { "N": "74" },
+            "GSIHash": { "S": "PARTITION_1" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/007.jpg" },
+            "ViewCount": { "N": "61" },
+            "GSIHash": { "S": "PARTITION_0" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/008.jpg" },
+            "ViewCount": { "N": "1" },
+            "GSIHash": { "S": "PARTITION_2" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/009.jpg" },
+            "ViewCount": { "N": "0" },
+            "GSIHash": { "S": "PARTITION_2" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/010.jpg" },
+            "ViewCount": { "N": "50" },
+            "GSIHash": { "S": "PARTITION_2" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/011.jpg" },
+            "ViewCount": { "N": "78" },
+            "GSIHash": { "S": "PARTITION_1" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "Image": { "S": "images/012.jpg" },
+            "ViewCount": { "N": "93" },
+            "GSIHash": { "S": "PARTITION_1" }
+        }
+      }
+    }
+  ]
+}'
